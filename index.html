@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14304a">
+<title>মাসনুন পয়েন্ট — সুন্নাহভিত্তিক ইসলামিক জ্ঞান</title>
+<meta name="description" content="কুরআন, হাদীস, দু'আ, মাসায়েল ও প্রবন্ধ — এক ঠিকানায়।">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="./"><span class="mark">م</span><span>মাসনুন পয়েন্ট</span></a>
+    <button class="burger" id="burger" aria-label="মেনু" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#quran">কুরআন</a><a href="#hadith">হাদীস</a><a href="#times">নামাজের সময়</a>
+      <a href="#masail">মাসায়েল</a><a href="#dua">দু'আ</a><a href="#articles">প্রবন্ধ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">সুন্নাহর আলোয় জীবন</p>
+    <h1>ইলম, আমল ও দু'আ — এক ঠিকানায়</h1>
+    <p class="lead">কুরআন, হাদীস, মাসায়েল ও দৈনন্দিন দু'আ খুঁজুন সহজেই।</p>
+    <form class="search" id="searchForm" role="search">
+      <input id="q" type="search" placeholder="কুরআন, হাদীস বা যেকোনো বিষয় খুঁজুন…" autocomplete="off" aria-label="খুঁজুন">
+      <button type="submit">খুঁজুন</button>
+    </form>
+    <div id="results" class="results" hidden></div>
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="grid" aria-label="বিভাগসমূহ">
+    <a class="tile" id="quran" href="#quran"><span class="ic">📖</span><b>কুরআন</b><small>তিলাওয়াত ও অনুবাদ</small></a>
+    <a class="tile" id="hadith" href="#hadith"><span class="ic">📜</span><b>হাদীস</b><small>সহীহ সংকলন</small></a>
+    <a class="tile" id="times" href="#times"><span class="ic">🕌</span><b>নামাজের সময়</b><small>আপনার শহরের সময়সূচি</small></a>
+    <a class="tile" id="masail" href="#masail"><span class="ic">❓</span><b>মাসায়েল</b><small>প্রশ্ন ও সমাধান</small></a>
+    <a class="tile" id="dua" href="#dua"><span class="ic">🤲</span><b>দু'আ</b><small>দৈনন্দিন দু'আ</small></a>
+    <a class="tile" id="articles" href="#articles"><span class="ic">✍️</span><b>প্রবন্ধ</b><small>নির্দেশনামূলক লেখা</small></a>
+  </section>
+
+  <section class="card amol" aria-labelledby="amolH">
+    <p class="eyebrow">প্রতিদিনের আমল</p>
+    <h2 id="amolH">আজকের আমল</h2>
+    <p class="date" id="today"></p>
+    <div id="amol"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <b>মাসনুন পয়েন্ট</b>
+    <p>সকল লেখা যাচাই করে প্রকাশ করা হবে, ইন-শা-আল্লাহ।</p>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
